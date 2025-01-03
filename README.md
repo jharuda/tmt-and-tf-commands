@@ -24,11 +24,19 @@ tmt try -p /plans/basic rhel-8.10@minute
 tmt run -vvv --all execute --how tmt -i provision --how minute -i <1MT_IMAGE> tests --name .
 ```
 
-### Execute test in 1minutetip
+### Login after test execution
+
+```
+tmt -vvv run --all plans --name basic execute --how tmt -i provision -h minute -i 1MT-RHEL-7.9-updates-20230531.0 tests --name . login
+```
+
+### Execute test in 1minutetip on existing machine
 
 ```
 tmt run -vvv --all provision --how connect --guest=10.0.186.112 --user=root --password=root --become tests --name
 ```
+
+
 
 ## tmt-tests
 
