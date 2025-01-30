@@ -33,7 +33,7 @@ tmt -vvv run --all plans --name basic execute --how tmt -i provision -h minute -
 ### Execute test in 1minutetip on existing machine
 
 ```
-tmt run -vvv --all provision --how connect --guest=10.0.186.112 --user=root --password=root --become tests --name
+tmt run -vvv --all provision --how connect --guest=10.0.186.112 --user=root --password=root --become tests --name .
 ```
 
 
