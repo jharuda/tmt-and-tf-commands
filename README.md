@@ -2,7 +2,7 @@
 
 [[_TOC_]]
 
-## tmt-try
+## tmt try
 
 ```
 tmt try rhel-8.10@minute
@@ -16,7 +16,7 @@ tmt try -p /plans/basic rhel-8.10@minute
 ```
 
 
-## tmt-run
+## tmt run
 
 ### run preparation from plan before test execution
 
@@ -36,9 +36,15 @@ tmt -vvv run --all plans --name basic execute --how tmt -i provision -h minute -
 tmt run -vvv --all provision --how connect --guest=10.0.186.112 --user=root --password=root --become tests --name .
 ```
 
+## discover
 
+Print tests in test plan.
 
-## tmt-tests
+```
+tmt run discover -v plan --name <test_plan>
+```
+
+## tmt tests
 
 ### Execute test on existing machine
 
@@ -54,7 +60,7 @@ Print tests and information based on filter condition - in this case test execut
 tmt tests show --filter duration:15m
 ```
 
-### tmt-lint
+## Lint
 
 Linter for all files (few test to check metadata validity)
 The second parameter (...TC…) is optional. If it is not set, then it lints all fmf files
