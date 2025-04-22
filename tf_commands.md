@@ -33,3 +33,8 @@ testing-farm request --git-url https://gitlab.cee.redhat.com/toolchain-qe/tests/
                      --plan /plans/gating
 ```
 
+Image mode testing:
+
+```
+testing-farm request --context 'distro=rhel-10.0' --compose RHEL-10.0-image-mode --arch x86_64 --git-url https://pkgs.devel.redhat.com/git/tests/giflib --git-ref master  --plan basic
+```
