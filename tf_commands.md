@@ -1,9 +1,5 @@
 # tf_commands.md
 
-## Links
-
-List of [Testing Farm composes](http://storage.tft.osci.redhat.com/composes-production.html)
-
 ## Examples
 
 ```
