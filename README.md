@@ -36,6 +36,10 @@ tmt -vvv run --all plans --name basic execute --how tmt -i provision -h minute -
 
 ```
 tmt run -vvv --all provision --how connect --guest=10.0.186.112 --user=root --password=root --become tests --name .
+
+# or run the whole plan
+
+tmt run -vvv --all plans --name <test_plan_name> provision --how connect --guest=10.5.228.70 --user=root --password=root --become tests
 ```
 
 ### Running virtual machine
